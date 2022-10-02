@@ -1,0 +1,135 @@
+<!-- Partie 1 -->
+<!DOCTYPE html>
+<html lang="fr-ca">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Maxime Viens :: Jeux vidéos</title>
+  </head>
+  <body>
+    <header>
+      <img
+        src="./FournirAuxEtudiants/Laboratoire4_Partie2/images/banners.png"
+        alt="Bannières"
+        width="33%"
+      />
+      <img
+        src="./FournirAuxEtudiants/Laboratoire4_Partie2/images/banners.png"
+        alt="Bannières"
+        width="33%"
+      />
+      <img
+        src="./FournirAuxEtudiants/Laboratoire4_Partie2/images/banners.png"
+        alt="Bannières"
+        width="33%"
+      />
+      <h1>Maxime Viens :: Jeux vidéos</h1>
+      <h4>Partie 1</h4>
+    </header>
+    <main>
+      <nav>
+        <ul>
+          <li><a href="#informations">Informations</a></li>
+          <li><a href="#inscription">Inscription</a></li>
+          <li><a href="#favoris">Personnage favori</a></li>
+          <li><a href="#soumettre">Envoi de fichiers</a></li>
+          <li><a href="#commentaire">Commentaire</a></li>
+          <li>
+            <h4>
+              <a href="gamesofthrone.html">Games of Throne (Partie 2)</a>
+            </h4>
+          </li>
+          <li>
+            <h4>
+              <a href="partie3.html">Questions de compréhension (Partie 3)</a>
+            </h4>
+          </li>
+        </ul>
+      </nav>
+      <h3>Vos jeux vidéos</h3>
+      <form action="index.html" method="POST" enctype="multipart/form-data">
+        <caption>
+          Soumettre un jeu vidéo:
+        </caption>
+        <fieldset id="informations">
+          <legend>Informations</legend>
+          <label for="nom">Titre de votre jeu: </label>
+          <input type="text" id="nom" required />
+        </fieldset>
+        <br />
+        <fieldset id="inscription">
+          <legend>Inscription</legend>
+          <label for="nickname">Pseudo: </label>
+          <input type="text" name="nickname" id="nickname" required /><br />
+          <label for="email">Adresse de messagerie: </label>
+          <input type="email" name="email" id="email" autocomplete required />
+          <br />
+          <label for="tel">Numéro de téléphone: </label>
+          <input type="tel" name="tel" id="tel" />
+          <br /><br />
+          <label for="password">Mot de passe: </label>
+          <input type="password" name="password" id="password" required />
+          <br />
+        </fieldset>
+        <br />
+        <fieldset id="favoris">
+          <legend>Favoris</legend>
+          <label for="fav_color">Couleur favorite: </label>
+          <input type="color" name="fav_color" id="fav_color" />
+          <h4>Personnage</h4>
+          <label for="girl">Femme: </label>
+          <input type="radio" name="gender" id="girl" />
+          <label for="boy">Homme: </label>
+          <input type="radio" name="gender" id="boy" />
+          <label for="non_binary">Non binaire: </label>
+          <input type="radio" name="gender" id="nonBinary" />
+          <label for="age">Âge: </label>
+          <input type="number" name="age" id="age" min="0" />
+        </fieldset>
+        <br />
+        <fieldset id="soumettre">
+          <legend>Envoi de fichier</legend>
+          <label for="file"
+            >Charger le fichier à exporter sur notre serveur: </label
+          ><br />
+          <input type="file" name="file" id="file" />
+          <br /><br />
+          <input type="reset" name="reset" value="Reset" />
+        </fieldset>
+        <fieldset id="commentaire">
+          <legend>Commentaire:</legend>
+          <textarea
+            name="commentaire"
+            id="commentaire"
+            maxlength="1500"
+            cols="30"
+            rows="10"
+            placeholder="Votre commentaire ici:"
+            required
+          ></textarea
+          ><br />
+          <label for="urgence" id="urgence">Urgence?</label>
+          <select name="urgence" id="urgence">
+            <option value="importante">Importante</option>
+            <option value="faible">Faible</option>
+          </select>
+        </fieldset>
+        <label for="date">Quel jour est-on?</label>
+        <input type="date" name="date" id="date" />
+        <br /><br />
+        <section class="submit">
+          <input type="submit" value="Valider l'envoi ☺️" />
+        </section>
+      </form>
+    </main>
+    <footer style="margin-top: 80px">
+      <a href="http://www.github.com/">Open Code-source</a> by
+      <a
+        href="https://enchanting-syrniki-d413fa.netlify.app/works.html?fbclid=IwAR1p_nczW8D21lJppUkAG3homZeg8rMlMbZrMqS3U-0noWAfp4kk62ID7A0"
+        alt="Portfolio"
+        >Jammie Lachance-Côté</a
+      >
+    </footer>
+  </body>
+</html>
